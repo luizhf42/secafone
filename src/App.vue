@@ -10,7 +10,9 @@
 </template>
 
 <script setup lang="ts">
-const audio = new Audio("../assets/sound.mp3");
+import sound from "../assets/sound.mp3";
+
+const audio = new Audio(sound);
 audio.loop = true;
 const handleClick = () => {
 	audio.paused ? audio.play() : audio.pause();
