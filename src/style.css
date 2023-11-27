@@ -5,3 +5,9 @@
 body {
 	@apply min-h-screen bg-[#182120] text-white font-sans;
 }
+
+@keyframes pulse {
+	to {
+		box-shadow: 0 0 0 15px rgba(240, 240, 240, 0);
+	}
+}

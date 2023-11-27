@@ -4,18 +4,24 @@
 		<p>Entrou água no celular ou fone de ouvido? É fácil resolver.</p>
 		<div>
 			<small>Clique para ativar o som</small>
-			<button @click="handleClick">🔈️💦</button>
+			<button @click="handleClick" :class="{ 'button-pulse': isActive }">
+				🔈️💦
+			</button>
 		</div>
 	</main>
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 import sound from "../assets/sound.mp3";
 
 const audio = new Audio(sound);
 audio.loop = true;
+const isActive = ref(false);
+
 const handleClick = () => {
-	audio.paused ? audio.play() : audio.pause();
+	!isActive.value ? audio.play() : audio.pause();
+	isActive.value = !isActive.value;
 };
 </script>
 
