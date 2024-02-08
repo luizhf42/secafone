@@ -3,7 +3,7 @@
 **Retire água da saída de som de seu celular, computador ou fones de ouvido.** 
 O Secafone facilita o processo de retirada de água de um celular, fone de ouvido ou computador, após algum acidente. Com um clique no botão, será tocado um som que irá expelir a água através da saída de som.
 
-![](assets/screenshot.png)
+![](assets/images/screenshot.png)
 
 ## Instalação
 ```bash
