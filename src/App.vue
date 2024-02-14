@@ -4,22 +4,24 @@
 		<p>Entrou água no celular ou fone de ouvido? É fácil resolver.</p>
 		<Player />
 	</main>
+	<Explanation />
 </template>
 
 <script setup lang="ts">
 import Player from "./components/Player.vue";
+import Explanation from "./components/Explanation.vue";
 </script>
 
 <style scoped lang="postcss">
 main {
-	@apply flex flex-col items-center justify-center h-screen gap-2 text-center;
+	@apply main-background text-white flex flex-col items-center justify-center h-screen-9/10 gap-2 text-center;
 
 	h1 {
-		@apply text-4xl font-bold;
+		@apply text-4xl lg:text-5xl font-bold;
 	}
 
 	p {
-		@apply text-lg w-11/12;
+		@apply text-lg lg:text-xl w-11/12;
 	}
 }
 </style>

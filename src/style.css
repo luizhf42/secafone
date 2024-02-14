@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	@apply min-h-screen main-background text-white font-sans;
+	@apply min-h-screen bg-slate-300 font-sans;
 }
 
 @keyframes pulse {
