@@ -8,7 +8,7 @@
 			de forma permanente. A vibração sonora ajuda a mover e expelir a água
 			através da saída de som. Use com cuidado e evite volumes muito altos.
 		</p>
-		<img src="../../assets/images/illustration.jpg" alt="" />
+		<img loading="lazy" src="../../assets/images/illustration.webp" alt="" />
 	</section>
 </template>
 
