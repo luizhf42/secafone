@@ -12,6 +12,9 @@ export default {
 				start: "rgba(73, 83, 82, 1)",
 				stop: "rgba(24, 33, 32, 1)",
 			},
+			height: {
+				"screen-9/10": "90vh",
+			}
 		},
 	},
 	plugins: [
