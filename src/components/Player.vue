@@ -2,7 +2,8 @@
 	<div>
 		<small>Clique para ativar o som</small>
 		<button @click="handleClick" :class="{ 'button-pulse': isActive }">
-			🔈️💦
+			<img src="../../assets/images/speaker.svg" alt="" />
+			<img src="../../assets/images/droplets.svg" alt="" />
 		</button>
 	</div>
 </template>
@@ -26,11 +27,15 @@ div {
 	@apply flex flex-col items-center justify-center mt-12;
 
 	small {
-		@apply text-sm;
+		@apply text-xs sm:text-sm lg:text-base; 
 	}
 
 	button {
-		@apply mt-2 text-5xl bg-white rounded-full py-5 px-8;
+		@apply mt-2 flex justify-center items-center text-5xl bg-white rounded-full py-5 px-8;
+
+		img {
+			@apply w-12 h-12 sm:w-16 sm:h-16;
+		}
 	}
 }
 </style>
