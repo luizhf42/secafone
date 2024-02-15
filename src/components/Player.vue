@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<small>Clique para ativar o som</small>
-		<button @click="handleClick" :class="{ 'button-pulse': isActive }">
+		<small id="button-label">Clique para ativar o som</small>
+		<button @click="handleClick" :class="{ 'button-pulse': isActive }" aria-labelledby="button-label">
 			<img src="../../assets/images/speaker.svg" alt="" />
 			<img src="../../assets/images/droplets.svg" alt="" />
 		</button>
