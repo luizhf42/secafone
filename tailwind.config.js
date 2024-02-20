@@ -14,7 +14,10 @@ export default {
 			},
 			height: {
 				"screen-9/10": "90vh",
-			}
+			},
+			colors: {
+				anchor: "#163a89",
+			},
 		},
 	},
 	plugins: [
