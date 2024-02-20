@@ -5,11 +5,13 @@
 		<Player />
 	</main>
 	<Explanation />
+	<Footer />
 </template>
 
 <script setup lang="ts">
 import Player from "./components/Player.vue";
 import Explanation from "./components/Explanation.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <style scoped lang="postcss">
