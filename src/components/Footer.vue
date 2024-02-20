@@ -1,7 +1,7 @@
 <template>
 	<footer>
 		<p>
-			Made by
+			Feito por
 			<a
 				href="https://www.linkedin.com/in/luizhf42"
 				rel="noopener noreferrer"
