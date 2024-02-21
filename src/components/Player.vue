@@ -1,7 +1,11 @@
 <template>
 	<div>
 		<small id="button-label">Clique para ativar o som</small>
-		<button @click="handleClick" :class="{ 'button-pulse': isActive }" aria-labelledby="button-label">
+		<button
+			@click="handleClick"
+			:class="{ 'button-pulse': isPlaying }"
+			aria-labelledby="button-label"
+		>
 			<img src="../../assets/images/speaker.svg" alt="" />
 			<img src="../../assets/images/droplets.svg" alt="" />
 		</button>
@@ -9,16 +13,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import sound from "../../assets/sound.mp3";
+import { onMounted, ref } from "vue";
+import setupOscillator from "../utils/setupOscillator";
 
-const audio = new Audio(sound);
-audio.loop = true;
-const isActive = ref(false);
+const isPlaying = ref(false);
+const oscillator = ref();
+
+onMounted(() => {
+	oscillator.value = setupOscillator();
+});
 
 const handleClick = () => {
-	!isActive.value ? audio.play() : audio.pause();
-	isActive.value = !isActive.value;
+	const player = oscillator.value;
+	!isPlaying.value ? player.start() : player.stop();
+	isPlaying.value = !isPlaying.value;
 };
 </script>
 
@@ -27,7 +35,7 @@ div {
 	@apply flex flex-col items-center justify-center mt-12;
 
 	small {
-		@apply text-xs sm:text-sm lg:text-base; 
+		@apply text-xs sm:text-sm lg:text-base;
 	}
 
 	button {
