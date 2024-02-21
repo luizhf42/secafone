@@ -1,6 +1,4 @@
-export default () => {
-  const audioCtx = new AudioContext();
-	
+export default (audioCtx: AudioContext) => {
 	const oscillator = audioCtx.createOscillator();
 	oscillator.frequency.value = 200;
 

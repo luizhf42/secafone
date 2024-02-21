@@ -13,19 +13,21 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import {  ref } from "vue";
 import setupOscillator from "../utils/setupOscillator";
 
 const isPlaying = ref(false);
-const oscillator = ref();
-
-onMounted(() => {
-	oscillator.value = setupOscillator();
-});
+const audioContext = new AudioContext();
+const oscillator = ref(setupOscillator(audioContext));
 
 const handleClick = () => {
-	const player = oscillator.value;
-	!isPlaying.value ? player.start() : player.stop();
+	if (isPlaying.value) {
+		oscillator.value.stop();
+		oscillator.value = setupOscillator(audioContext);
+	} else {
+		oscillator.value.start();
+	}
+	
 	isPlaying.value = !isPlaying.value;
 };
 </script>
