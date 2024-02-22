@@ -13,23 +13,33 @@
 </template>
 
 <script setup lang="ts">
-import {  ref } from "vue";
+import { ref } from "vue";
 import setupOscillator from "../utils/setupOscillator";
 
 const isPlaying = ref(false);
-const audioContext = new AudioContext();
-const oscillator = ref(setupOscillator(audioContext));
+const audioContext = ref<AudioContext>();
+const oscillator = ref<OscillatorNode>();
+
+const initializeAudio = () => {
+	audioContext.value = new AudioContext();
+	oscillator.value = setupOscillator(audioContext.value);
+};
+
+const toggleOscillator = () => {
+	if (isPlaying.value) {
+		oscillator.value!.stop();
+		oscillator.value = setupOscillator(audioContext.value!);
+	} else {
+		oscillator.value!.start();
+	}
+};
 
 const handleClick = () => {
-	if (isPlaying.value) {
-		oscillator.value.stop();
-		oscillator.value = setupOscillator(audioContext);
-	} else {
-		oscillator.value.start();
-	}
-	
+	if (!oscillator.value) initializeAudio();
+	toggleOscillator();
 	isPlaying.value = !isPlaying.value;
 };
+
 </script>
 
 <style scoped lang="postcss">
