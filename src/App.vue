@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<h1>Seca Fone</h1>
+		<h1>Secafone</h1>
 		<p>Entrou água no celular ou fone de ouvido? É fácil resolver.</p>
 		<Player />
 	</main>
@@ -19,7 +19,7 @@ main {
 	@apply main-background text-white flex flex-col items-center justify-center h-screen-9/10 gap-2 text-center;
 
 	h1 {
-		@apply text-4xl lg:text-5xl font-bold;
+		@apply text-4xl lg:text-5xl font-bold drop-shadow-lg;
 	}
 
 	p {
