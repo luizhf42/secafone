@@ -17,6 +17,7 @@ export default {
 			},
 			colors: {
 				anchor: "#163a89",
+				warning: "#752121",
 			},
 		},
 	},

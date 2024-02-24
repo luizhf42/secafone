@@ -1,12 +1,12 @@
 <template>
 	<section>
 		<p>
-			O <strong>Seca Fone</strong> utiliza sons para expelir água de
+			O <strong>Secafone</strong> utiliza sons para expelir água de
 			dispositivos eletrônicos, como smartphones, tablets, notebooks, etc. O
 			contato da água com a parte interna desses dispositivos pode causar
 			diversos problemas como corrosão e oxidação, danificando-os, muitas vezes,
 			de forma permanente. A vibração sonora ajuda a mover e expelir a água
-			através da saída de som. Use com cuidado e evite volumes muito altos.
+			através da saída de som. <span>AVISO:</span> Cuidado com seus tímpanos! Não utilize se estiver com fones de ouvido ou muito próximo da saída de som.
 		</p>
 		<img loading="lazy" src="../../assets/images/illustration.webp" alt="" />
 	</section>
@@ -20,6 +20,11 @@ section {
 
 	p {
 		@apply md:text-lg lg:text-xl w-full text-justify md:w-2/3;
+
+		span {
+			@apply text-warning font-bold;
+		
+		}
 	}
 
 	img {
