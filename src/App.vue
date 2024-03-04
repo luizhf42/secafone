@@ -4,14 +4,25 @@
 		<p>Entrou água no celular ou fone de ouvido? É fácil resolver.</p>
 		<Player />
 	</main>
-	<Explanation />
+	<Details>
+		<template #title> Como funciona o Secafone?</template>
+		<template #description>
+			O <strong>Secafone</strong> utiliza sons para expelir água de dispositivos
+			eletrônicos, como smartphones, tablets, notebooks, etc. O contato da água
+			com a parte interna desses dispositivos pode causar diversos problemas
+			como corrosão e oxidação, danificando-os, muitas vezes, de forma
+			permanente. A vibração sonora ajuda a mover e expelir a água através da
+			saída de som. <span>AVISO:</span> Cuidado com seus tímpanos! Não utilize
+			se estiver com fones de ouvido ou muito próximo da saída de som.
+		</template>
+	</Details>
 	<Footer />
 </template>
 
 <script setup lang="ts">
 import Player from "./components/Player.vue";
-import Explanation from "./components/Explanation.vue";
 import Footer from "./components/Footer.vue";
+import Details from "./components/Details.vue";
 </script>
 
 <style scoped lang="postcss">
@@ -27,3 +38,4 @@ main {
 	}
 }
 </style>
+./components/Information.vue./components/Details.vue
