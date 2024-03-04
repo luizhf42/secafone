@@ -38,4 +38,3 @@ main {
 	}
 }
 </style>
-./components/Information.vue./components/Details.vue
