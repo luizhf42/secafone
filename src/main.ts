@@ -23,6 +23,8 @@ const articles = {
 	"como-preservar-o-celular": {
 		slug: "como-preservar-o-celular",
 		title: "Como preservar o celular",
+		publishedAt: "10/03/2024",
+		updatedAt: "",
 		description: "Dicas de como preservar seu celular",
 		content: `<p>O celular é uma extensão vital de nossas vidas diárias, que armazena nossas memórias, contatos e facilita o acesso ao mundo digital. A preservação esse dispositivo é essencial para garantir sua longevidade e desempenho consistente. Afinal, já se imaginou sem seu querido smartphone? Para ajudar a manter seu celular em ótimo estado, aqui estão algumas dicas úteis:</p>
 
