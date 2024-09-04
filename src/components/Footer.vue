@@ -18,9 +18,5 @@
 <style lang="postcss">
 footer {
 	@apply w-full text-center py-2 md:text-lg;
-
-	a {
-		@apply text-anchor;
-	}
 }
 </style>

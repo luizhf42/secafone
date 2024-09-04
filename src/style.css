@@ -4,6 +4,10 @@
 
 body {
 	@apply min-h-screen bg-slate-300 font-sans box-border;
+
+	a {
+		@apply text-anchor;
+	}
 }
 
 @keyframes pulse {
