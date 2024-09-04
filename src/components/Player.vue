@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { onUnmounted, ref } from "vue";
 import setupOscillator from "../utils/setupOscillator";
 
 const isPlaying = ref(false);
@@ -35,11 +35,14 @@ const toggleOscillator = () => {
 };
 
 const handleClick = () => {
-	if (!oscillator.value) initializeAudio();
+	if (!oscillator.value && !isPlaying.value) initializeAudio();
 	toggleOscillator();
 	isPlaying.value = !isPlaying.value;
 };
 
+onUnmounted(() => {
+	if (oscillator.value) oscillator.value.stop();
+});
 </script>
 
 <style scoped lang="postcss">
