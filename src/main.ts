@@ -28,25 +28,25 @@ const articles = {
 		description: "Dicas de como preservar seu celular",
 		content: `<p>O celular é uma extensão vital de nossas vidas diárias, que armazena nossas memórias, contatos e facilita o acesso ao mundo digital. A preservação esse dispositivo é essencial para garantir sua longevidade e desempenho consistente. Afinal, já se imaginou sem seu querido smartphone? Para ajudar a manter seu celular em ótimo estado, aqui estão algumas dicas úteis:</p>
 
-		<h3>Use capinhas e películas</h3>
+		<h2>Use capinhas e películas</h2>
 		
 		<p>
 			Se previnir de acidentes é essencial. Investir nas famosas capinhas e películas é o primeiro passo para manter seu celular seguro contra arranhões, quedas e outros danos acidentais. Esses acessórios atuam como uma armadura, absorvendo impactos e protegendo a integridade física do aparelho.
 		</p>
 		
-		<h3>Transporte consciente</h3>
+		<h2>Transporte consciente</h2>
 		
 		<p>Capinhas ajudam, mas não são suficientes. Transportar seu celular solto em uma bolsa, se batendo e raspando em outras coisas pode causar danos. Guarde-o em um local que o mantenha seguro e protegido, como um bolso com zíper ou um compartimento separado em sua bolsa. Também tome cuidado ao levar o celular no bolso da calça! Derrubar o coitado na calçada não é nada legal.</p>
 		
-		<h3>Cuidado com a bateria</h3>
+		<h2>Cuidado com a bateria</h2>
 		
 		<p>Deixar a bateria superaquecer é péssimo. Pode prejudicar a vida útil do celular e até ser arriscado, com risco de estufamento. Também seja consciente ao carregá-la: use carregadores originais e não carregue em voltagens não suportadas.</p>
 		
-		<h3>Deixe-o limpinho</h3>
+		<h2>Deixe-o limpinho</h2>
 		
 		<p>Manter seu celular limpo não é apenas estético, mas também ajuda a prevenir danos. Use um pano macio para remover poeira, sujeira e impressões digitais da tela e da parte traseira do dispositivo. Evite o uso de produtos químicos agressivos ─ eles podem danificar o dispositivo.</p>
 		
-		<h3>Fique alerta com o ambiente</h3>
+		<h2>Fique alerta com o ambiente</h2>
 		
 		<p>Evite exposição a condições extremas, como temperaturas muito altas ou baixas, que podem prejudicar o funcionamento interno do seu celular. Além disso, evite a exposição a líquidos. Caso aconteça um acidente com água, o <strong>Secafone</strong> pode te ajudar!</p>
 		

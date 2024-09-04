@@ -5,7 +5,7 @@
 		<Player />
 	</main>
 	<Explanation />
-	<h3>Artigos</h3>
+	<h2>Artigos</h2>
 	<ArticleCard
 		v-for="article in articles"
 		:key="article.slug"
@@ -38,7 +38,7 @@ main {
 	}
 
 }
-h3 {
+h2 {
 	@apply text-lg lg:text-xl text-center font-bold;
 }
 </style>

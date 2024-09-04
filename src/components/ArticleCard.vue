@@ -1,10 +1,10 @@
 <template>
 	<article>
-		<h4>
+		<h3>
 			<router-link :to="slug">
 				<slot name="title"></slot>
 			</router-link>
-		</h4>
+		</h3>
 		<p>
 			<slot name="description"></slot>
 		</p>
@@ -21,7 +21,7 @@ const { slug } = defineProps<{
 article {
 	@apply my-10 flex flex-col justify-center w-11/12 mx-auto max-w-3xl border border-[#182120] rounded-md bg-white;
 
-	h4 {
+	h3 {
 		@apply p-3 text-sm sm:text-base md:text-lg lg:text-xl font-bold text-anchor;
 	}
 
