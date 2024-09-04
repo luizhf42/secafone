@@ -25,12 +25,11 @@
 </template>
 
 <script setup lang="ts">
-import { inject } from "vue";
 import { useRoute } from "vue-router";
+import { articles } from "../data/articles";
 import formatArticleDate from "../utils/formatArticleDate";
 
 const slug = useRoute().params.articleSlug as string;
-const articles = inject("articles") as any;
 const article = articles[slug];
 </script>
 

@@ -20,9 +20,7 @@
 import Explanation from "./Explanation.vue";
 import ArticleCard from "./ArticleCard.vue";
 import Player from "./Player.vue";
-import { inject } from "vue";
-
-const articles = inject("articles") as any;
+import { articles } from "../data/articles";
 </script>
 
 <style scoped lang="postcss">
