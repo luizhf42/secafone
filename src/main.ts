@@ -18,6 +18,9 @@ const routes = [
 const router = createRouter({
 	history: createWebHistory(),
 	routes,
+	scrollBehavior() {
+		return { top: 0 };
+	},
 });
 
 createApp(App).use(router).provide("articles", articles).mount("#app");
