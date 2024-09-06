@@ -57,8 +57,20 @@ const article = articles[slug];
 		@apply text-lg lg:text-xl font-bold;
 	}
 
-	:deep(p) {
+	:deep(p), :deep(li) {
 		@apply text-justify text-base lg:text-lg mt-1 mb-5;
+	}
+
+	:deep(li) {
+		@apply list-disc list-inside mb-2;
+	}
+
+	:deep(ul) {
+		@apply mt-1 mb-5;
+	}
+
+	:deep(strong) {
+		@apply font-semibold;
 	}
 }
 </style>
