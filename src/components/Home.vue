@@ -2,7 +2,7 @@
 	<main>
 		<section>
 			<h1>Secafone</h1>
-			<p>Entrou água no celular ou fone de ouvido? É fácil resolver.</p>
+			<p>Entrou água no celular ou fone de ouvido? <br>É fácil resolver.</p>
 			<Player />
 		</section>
 	</main>
