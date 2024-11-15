@@ -6,7 +6,7 @@
 			contato da água com a parte interna desses dispositivos pode causar
 			diversos problemas como corrosão e oxidação, danificando-os, muitas vezes,
 			de forma permanente. A vibração sonora ajuda a mover e expelir a água
-			através da saída de som. <span>AVISO:</span> Cuidado com seus tímpanos! Não utilize se estiver com fones de ouvido ou muito próximo da saída de som.
+			através da saída de som. <strong>AVISO:</strong> Cuidado com seus tímpanos! Não utilize se estiver com fones de ouvido ou muito próximo da saída de som.
 		</p>
 		<img loading="lazy" src="../../assets/images/illustration.webp" alt="" />
 	</section>
@@ -19,12 +19,7 @@ section {
 	@apply my-10 flex flex-col md:flex-row items-center justify-normal md:justify-between gap-8 w-4/5 mx-auto;
 
 	p {
-		@apply md:text-lg lg:text-xl w-full text-justify md:w-2/3;
-
-		span {
-			@apply text-warning font-bold;
-		
-		}
+		@apply md:text-lg lg:text-xl w-full text-justify md:w-2/3 text-white;
 	}
 
 	img {

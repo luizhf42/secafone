@@ -1,8 +1,10 @@
 <template>
 	<main>
-		<h1>Secafone</h1>
-		<p>Entrou água no celular ou fone de ouvido? É fácil resolver.</p>
-		<Player />
+		<section>
+			<h1>Secafone</h1>
+			<p>Entrou água no celular ou fone de ouvido? É fácil resolver.</p>
+			<Player />
+		</section>
 	</main>
 	<Explanation />
 	<h2>Artigos</h2>
@@ -25,16 +27,19 @@ import { articles } from "../data/articles";
 
 <style scoped lang="postcss">
 main {
-	@apply main-background text-white flex flex-col items-center justify-center h-screen-9/10 gap-2 text-center;
+	@apply text-teal-900 h-screen-9/10 flex items-center justify-center;
 
-	h1 {
-		@apply text-4xl lg:text-5xl font-bold drop-shadow-lg;
+	section {
+		@apply bg-teal-50 w-full max-w-xl text-balance flex flex-col items-center justify-center gap-2 text-center px-6 py-10 rounded-xl shadow-md;
+
+		h1 {
+			@apply text-4xl lg:text-5xl font-bold drop-shadow-lg;
+		}
+
+		p {
+			@apply text-gray-600 text-lg lg:text-xl;
+		}
 	}
-
-	p {
-		@apply text-lg lg:text-xl w-11/12;
-	}
-
 }
 h2 {
 	@apply text-lg lg:text-xl text-center font-bold;

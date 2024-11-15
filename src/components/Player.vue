@@ -1,24 +1,28 @@
 <template>
-	<div>
-		<small id="button-label">Clique para ativar o som</small>
-		<button
-			@click="handleClick"
-			:class="{ 'button-pulse': isPlaying }"
-			aria-labelledby="button-label"
-		>
-			<img src="../../assets/images/speaker.svg" alt="" />
-			<img src="../../assets/images/droplets.svg" alt="" />
-		</button>
-	</div>
+	<button @click="handleClick" :class="buttonProps.class">
+		<img :src="buttonProps.icon" alt="" />
+		{{ buttonProps.text }} som
+	</button>
 </template>
 
 <script setup lang="ts">
-import { onUnmounted, ref } from "vue";
+import { computed, onUnmounted, ref } from "vue";
 import setupOscillator from "../utils/setupOscillator";
+import speaker from "../../assets/images/speaker.svg";
+import powerOff from "../../assets/images/power-off.svg";
 
 const isPlaying = ref(false);
 const audioContext = ref<AudioContext>();
 const oscillator = ref<OscillatorNode>();
+const buttonProps = computed(() => {
+	return {
+		class: isPlaying.value
+			? "button-pulse bg-red-500 hover:bg-red-600"
+			: "bg-teal-900 hover:bg-teal-950",
+		icon: isPlaying.value ? powerOff : speaker,
+		text: isPlaying.value ? "Desativar" : "Ativar",
+	};
+});
 
 const initializeAudio = () => {
 	audioContext.value = new AudioContext();
@@ -41,24 +45,16 @@ const handleClick = () => {
 };
 
 onUnmounted(() => {
-	if (oscillator.value) oscillator.value.stop();
+	if (oscillator.value && isPlaying.value) oscillator.value.stop();
 });
 </script>
 
 <style scoped lang="postcss">
-div {
-	@apply flex flex-col items-center justify-center mt-12;
+button {
+	@apply w-full max-w-80 text-teal-50 mt-10 flex justify-center items-center text-xl xs:text-3xl rounded-xl py-5 px-8 transition-colors duration-500 ease-out shadow-md;
 
-	small {
-		@apply text-xs sm:text-sm lg:text-base;
-	}
-
-	button {
-		@apply mt-2 flex justify-center items-center text-5xl bg-white rounded-full py-5 px-8;
-
-		img {
-			@apply w-12 h-12 sm:w-16 sm:h-16;
-		}
+	img {
+		@apply xs:w-10 w-7 aspect-square mr-3;
 	}
 }
 </style>
