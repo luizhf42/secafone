@@ -51,7 +51,7 @@ onUnmounted(() => {
 
 <style scoped lang="postcss">
 button {
-	@apply w-full max-w-80 text-teal-50 mt-10 flex justify-center items-center text-xl xs:text-3xl rounded-xl py-5 px-8 transition-colors duration-500 ease-out shadow-md;
+	@apply w-full max-w-80 text-teal-50 mt-10 flex justify-center items-center text-xl xs:text-3xl rounded-xl py-5 px-8 ;
 
 	img {
 		@apply xs:w-10 w-7 aspect-square mr-3;
