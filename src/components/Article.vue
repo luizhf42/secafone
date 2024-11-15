@@ -18,7 +18,7 @@
 					>Atualizado em {{ formatArticleDate(article.updatedAt) }}</span
 				>
 			</div>
-			<img :src="`../../assets/images/${slug}.webp`" alt="" />
+			<img :src="article.image" alt="" />
 			<div class="content" v-html="article.content"></div>
 		</main>
 	</div>

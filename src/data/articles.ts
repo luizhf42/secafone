@@ -1,5 +1,9 @@
+import comoPreservarOCelular from "../../assets/images/como-preservar-o-celular.webp";
+import oQueFazer from "../../assets/images/o-que-fazer.webp";
+
 type Article = {
 	slug: string;
+	image?: string
 	title: string;
 	publishedAt: string;
 	updatedAt: string;
@@ -14,6 +18,7 @@ type Articles = {
 export const articles: Articles = {
 	"como-preservar-o-celular": {
 		slug: "como-preservar-o-celular",
+		image: comoPreservarOCelular,
 		title: "Como preservar o celular",
 		publishedAt: "10/03/2024",
 		updatedAt: "",
@@ -46,6 +51,7 @@ export const articles: Articles = {
 	},
 	"o-que-fazer": {
 		slug: "o-que-fazer",
+		image: oQueFazer,
 		title: "O que fazer quando o celular cai na água",
 		publishedAt: "06/09/2024",
 		updatedAt: "",
