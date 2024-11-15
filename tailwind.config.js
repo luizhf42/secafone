@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+				sans: ["Outfit", "ui-sans-serif", "system-ui", "sans-serif"],
 			},
 			height: {
 				"screen-9/10": "90vh",
