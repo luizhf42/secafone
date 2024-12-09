@@ -23,7 +23,7 @@ export const articles: Articles = {
 		publishedAt: "10/03/2024",
 		updatedAt: "",
 		description: "Dicas de como preservar seu celular",
-		content: `<p>O celular é uma extensão vital de nossas vidas diárias, que armazena nossas memórias, contatos e facilita o acesso ao mundo digital. A preservação esse dispositivo é essencial para garantir sua longevidade e desempenho consistente. Afinal, já se imaginou sem seu querido smartphone? Para ajudar a manter seu celular em ótimo estado, aqui estão algumas dicas úteis:</p>
+		content: `<p>O celular é uma extensão vital de nossas vidas diárias, que armazena nossas memórias, contatos e facilita o acesso ao mundo digital. A preservação desse dispositivo é essencial para garantir sua longevidade e desempenho consistente. Afinal, já se imaginou sem seu querido smartphone? Para ajudar a manter seu celular em ótimo estado, aqui estão algumas dicas úteis:</p>
 
 		<h2>Use capinhas e películas</h2>
 		
@@ -75,7 +75,7 @@ export const articles: Articles = {
 			<li><strong>Usar aspirador de pó</strong>: O aspirador, devido à sua potência, pode estragar e até aspirar botões e componentes pequenos.</li>
 			<li><strong>Usar secador de cabelo para secar o celular</strong>: O calor excessivo pode danificar permanentemente as peças internas do dispositivo.</li>
 			<li><strong>Pressionar botões</strong>: Pressionar botões pode empurrar a água ainda mais para dentro do aparelho, agravando o problema.</li>
-			<li><strong>Sacudir o celular</strong>: Agitar o aparelho pode espalhar a água para áreas sensíveis que ainda  foram atingidas.</li>
+			<li><strong>Sacudir o celular</strong>: Agitar o aparelho pode espalhar a água para áreas sensíveis que ainda não foram atingidas.</li>
 			<li><strong>Colocar o celular para carregar</strong>: Carregar um aparelho ainda molhado pode causar sérios danos, tanto ao dispositivo quanto à bateria.</li>
 			<li><strong>Usar arroz para secagem</strong>: Embora o arroz seja uma solução popular, ele é eficaz apenas para secagem externa. Inclusive, deixar o celular muito tempo no arroz pode agravar ainda mais o problema, caso pequenos grãos entrem no dispositivo.</li>
 			<li><strong>Deixar o celular exposto ao sol</strong>: Expor o dispositivo à luz solar direta pode causar superaquecimento e danificar a tela e componentes internos.</li>
