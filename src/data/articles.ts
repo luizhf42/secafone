@@ -21,7 +21,7 @@ export const articles: Articles = {
 		image: comoPreservarOCelular,
 		title: "Como preservar o celular",
 		publishedAt: "10/03/2024",
-		updatedAt: "",
+		updatedAt: "09/12/2024",
 		description: "Dicas de como preservar seu celular",
 		content: `<p>O celular é uma extensão vital de nossas vidas diárias, que armazena nossas memórias, contatos e facilita o acesso ao mundo digital. A preservação desse dispositivo é essencial para garantir sua longevidade e desempenho consistente. Afinal, já se imaginou sem seu querido smartphone? Para ajudar a manter seu celular em ótimo estado, aqui estão algumas dicas úteis:</p>
 
@@ -54,7 +54,7 @@ export const articles: Articles = {
 		image: oQueFazer,
 		title: "O que fazer quando o celular cai na água",
 		publishedAt: "06/09/2024",
-		updatedAt: "",
+		updatedAt: "09/12/2024",
 		description: "Como agir nessa emergência e salvar seu aparelho",
 		content: `<p>Pia, banheira, piscina, vaso sanitário... Acidentes envolvendo smartphones e líquidos são comuns, e muitas pessoas não sabem como agir rapidamente para minimizar os danos. Muitos celulares hoje em dia são resistentes à água, mas não a prova d'água! Caso você passe por esse problema, seguir os passos corretos pode salvar seu aparelho e te poupar do gasto de uma nova aquisição.</p>
 		
