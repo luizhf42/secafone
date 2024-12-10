@@ -3,7 +3,7 @@ import oQueFazer from "../../assets/images/o-que-fazer.webp";
 
 type Article = {
 	slug: string;
-	image?: string
+	image: string;
 	title: string;
 	publishedAt: string;
 	updatedAt: string;
@@ -14,6 +14,8 @@ type Article = {
 type Articles = {
 	[slug: string]: Article;
 };
+
+const secafoneImage = "https://i.imgur.com/XOpyiJW.png";
 
 export const articles: Articles = {
 	"como-preservar-o-celular": {
@@ -83,5 +85,35 @@ export const articles: Articles = {
 
 		<p>Um celular molhado não é o fim dos tempos, mas uma intervenção rápida e correta pode evitar problemas maiores. </p>
 `,
+	},
+
+	"como-o-secafone-funciona": {
+		slug: "como-o-secafone-funciona",
+		image: secafoneImage,
+		title: "Como o Secafone funciona?",
+		publishedAt: "10/12/2024",
+		updatedAt: "",
+		description:
+			"Entenda o funcionamento do Secafone e como ele atua em seu celular",
+		content: `<p>Dispositivos eletrônicos como smartphones, smartwatches e fones de ouvido frequentemente enfrentam o problema da entrada de água em seus alto-falantes, o que pode causar danos ao som ou até à funcionalidade geral do aparelho, caso a água entre em contato com outros componentes. O <strong>Secafone</strong> é uma solução prática que utiliza uma frequência sonora específica para ejetar água de dispositivos eletrônicos de forma eficaz. Mas como e por que ele funciona?</p>
+	
+			<h2>O Problema: Água nos Alto-falantes</h2>
+			<p>Quando a água entra nos alto-falantes de um dispositivo, ela pode interferir na vibração do diafragma, que é o componente responsável por produzir som. Isso resulta em sons abafados, distorcidos ou até mesmo na completa perda de funcionalidade dos alto-falantes, até que a água seja removida. Além disso, caso a quantidade de líquido que entrou no dispositivo seja grande, outros componentes também podem ser atingidos e danificados por oxidação e corrosão. Em vez de recorrer a métodos tradicionais e muitas vezes ineficazes, como sacudir o dispositivo ou esperar que ele seque naturalmente, o <strong>Secafone</strong> oferece uma abordagem mais rápida e confiável para resolver o problema!</p>
+			
+			<h2>O princípio científico por trás do Secafone</h2>
+			<p>A ejeção de água com som funciona com base na vibração gerada por ondas sonoras. Quando o Secafone emite um som, o alto-falante cria vibrações no diafragma. Dependendo da frequência do som, essas vibrações são fortes o suficiente para desalojar as gotas de água acumuladas, permitindo que elas sejam expelidas pela grade do alto-falante. O aplicativo utiliza a frequência de 200Hz, eficaz para criar o movimento necessário para empurrar a água sem causar danos ao hardware do dispositivo.</p>
+			
+			<h2>Como o Secafone funciona (tecnicamente)?</h2>
+			<p>O Secafone utiliza a API de áudio do navegador, a <a href='https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API' rel='noopener noreferrer' target='_blank'>Web Audio API</a>. Através dela, é usado um <i><a href="https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode" rel='noopener noreferrer' target='_blank'>oscillator</a></i>, que permite configurar, de forma programática, uma onda de 200Hz. Ele é conectado a um "destino", no caso, o alto-falante do seu dispositivo. O botão na página principal do Secafone controla esse <i>oscillator</i>, permitindo que o usuário ligue e desligue o som emitido.</p>
+			
+			<h2>Vantagens e limitações</h2>
+			<p>
+				O Secafone apresenta diversas vantagens que o tornam uma ferramenta prática e acessível para lidar com água em dispositivos eletrônicos. Ele é simples e rápido, permitindo a ejeção de água em questão de segundos, sem a necessidade de desmontar o aparelho ou recorrer a equipamentos externos. Além disso, seu método é seguro ─ projetado para não causar danos ao hardware dos dispositivos ─ e econômico. Por fim, sua versatilidade permite que seja utilizado em diferentes tipos de dispositivos, como smartphones e fones de ouvido. <br/>
+				No entanto, ele possui algumas limitações que devem ser consideradas. Em casos de grande quantidade de água dentro do dispositivo, o Secafone pode não ser suficiente, tornando necessário buscar assistência técnica especializada. Se a água já tiver causado curto-circuitos ou danos internos ao aparelho, o aplicativo não será capaz de resolver o problema. Além disso, é importante usá-lo com moderação, pois o uso prolongado pode levar ao superaquecimento do alto-falante.
+			</p>
+			
+			<h2>Conclusão</h2>
+			<p>O <strong>Secafone</strong> é uma ferramenta poderosa e acessível para lidar com um problema comum em dispositivos eletrônicos. Entretanto, ele não substitui a atuação e o parecer de um profissional qualificado. Utilizá-lo pode te ajudar, mas sempre prefira a intervenção especializada!</p>
+	`,
 	},
 };
